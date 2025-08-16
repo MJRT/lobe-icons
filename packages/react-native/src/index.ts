@@ -1,4 +1,6 @@
 // Export features
+export { default as IconAvatar } from './features/IconAvatar';
+export { default as IconCombine } from './features/IconCombine';
 export { rnModelMappings as modelMappings } from './features/modelConfig';
 export { default as ModelIcon } from './features/ModelIcon';
 export { default as ModelTag } from './features/ModelTag';
