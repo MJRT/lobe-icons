@@ -1,7 +1,7 @@
-import { Tag, TagProps } from '@lobehub/ui';
 import { memo } from 'react';
 
 import ModelIcon from '../ModelIcon';
+import { default as Tag, TagProps } from './Tag';
 
 export interface ModelTagProps extends Omit<TagProps, 'icon' | 'children'> {
   model: string;

@@ -1,5 +1,4 @@
-import { DivProps } from '@lobehub/ui';
-import { FC, memo } from 'react';
+import { FC, HTMLAttributes, memo } from 'react';
 
 import Ai21 from '@/Ai21';
 import Ai302 from '@/Ai302';
@@ -84,6 +83,8 @@ type ProviderIconType = FC<IconType & any> & {
   Combine?: FC<Omit<IconCombineProps, 'Icon' | 'Text'> & any>;
   Text?: FC<IconType & any>;
 };
+
+export type DivProps = HTMLAttributes<HTMLDivElement>;
 
 export interface ProviderMapping {
   Combine?: FC<DivProps & { size: number; type: 'color' | 'mono' }>;

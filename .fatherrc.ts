@@ -1,5 +1,6 @@
 import { defineConfig } from 'father';
 
 export default defineConfig({
-  esm: { output: 'es', ignores: ['./src/components/**/*', './src/Editor/**/*'] },
+  esm: { output: 'dist/esm', ignores: ['./src/components/**/*', './src/Editor/**/*'] },
+  cjs: { output: 'dist/cjs', ignores: ['./src/components/**/*', './src/Editor/**/*'] },
 });
