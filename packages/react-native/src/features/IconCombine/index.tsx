@@ -27,6 +27,7 @@ const RNIconCombine = memo<RNIconCombineProps>(
           inverse ? { marginLeft: size * spaceMultiple } : { marginRight: size * spaceMultiple },
           iconProps?.style,
         ]}
+        {...rest}
       />
     );
 
@@ -66,6 +67,7 @@ const RNIconCombine = memo<RNIconCombineProps>(
               },
               extraStyle,
             ]}
+            {...rest}
           >
             {extra}
           </Text>
